@@ -1,0 +1,17 @@
+<h1>練習</h1>
+
+<input type="text" [(ngModel)]="postList.id">
+<br>
+<input type="text" [(ngModel)]="postList.name">
+<br>
+<button (click)="submitList()">送出</button>
+{{postList | json}}
+
+<ng-container *ngIf="putList">
+    <input type="text" [(ngModel)]="putList.id">
+    <br>
+    <input type="text" [(ngModel)]="putList.name">
+    <br>
+    <button (click)="submitList()">送出</button>
+</ng-container>
+
