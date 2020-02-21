@@ -9,7 +9,8 @@ import { List } from './model/list.model';
 })
 export class PracticeService {
   constructor(
-    public http: HttpClient
+    private http: HttpClient,
+    private practiceService: PracticeService
   ) { }
 
   getLists(): Observable<List[]> {
